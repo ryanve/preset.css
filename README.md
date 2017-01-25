@@ -12,3 +12,9 @@ npm install preset.css --save
 ```scss
 @import './node_modules/preset.css/preset';
 ```
+
+### Import in Less
+
+```less
+@import (less) './node_modules/preset.css/preset.css';
+```

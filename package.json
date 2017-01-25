@@ -5,21 +5,17 @@
   "license": "MIT",
   "author": "Ryan Van Etten",
   "homepage": "https://github.com/ryanve/preset.css",
-  "scripts": {
-    "build": "node-sass _preset.scss preset.css",
-    "test": "npm run build"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/ryanve/preset.css.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ryanve/preset.css/issues"
   },
   "keywords": [
     "css",
     "scss",
     "less",
     "reset"
-  ],
-  "devDependencies": {
-    "node-sass": "^3.8.0"
-  }
+  ]
 }

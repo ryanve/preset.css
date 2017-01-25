@@ -1,0 +1,24 @@
+{
+  "name": "preset.css",
+  "description": "CSS reset for interactive elements",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": "Ryan Van Etten",
+  "homepage": "https://github.com/ryanve/preset.css",
+  "scripts": {
+    "build": "node-sass _preset.scss preset.css",
+    "test": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryanve/preset.css.git"
+  },
+  "keywords": [
+    "css",
+    "scss",
+    "reset"
+  ],
+  "devDependencies": {
+    "node-sass": "^3.8.0"
+  }
+}

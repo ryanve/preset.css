@@ -1,0 +1,19 @@
+[hidden] {
+  display: none;
+}
+
+a,
+button,
+input,
+label,
+select,
+summary,
+textarea {
+  touch-action: manipulation;
+}
+
+:disabled,
+:disabled * {
+  cursor: default;
+  pointer-events: none;
+}

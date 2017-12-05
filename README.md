@@ -27,3 +27,14 @@ npm install preset.css --save
 - `.preset-textarea`
 - `.preset-label`
 - `.preset-button`
+
+## [Mixins](mixin.css)
+
+```css
+@include preset-color;
+@include preset-box;
+@include preset-input;
+@include preset-textarea;
+@include preset-label;
+@include preset-button;
+```

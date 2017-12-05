@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US" class="paint-base font-sans">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Preset CSS rules: preset.css</title>
+<link rel="stylesheet" href="preset.css">
+<style>
+/*:focus { outline-color: currentColor }
+:link:not(:hover):not(:focus) { text-decoration: none }
+:link { color: inherit; text-decoration-skip: ink }
+:visited { color: inherit }*/
+.paint-base { color: #222; background-color: #eee }
+.paint-show { color: #111; background-color: #ed3 }
+.paint-call { color: #111; background-color: #ed3 }
+.font-same { font: inherit }
+.font-sans { font-family: sans-serif }
+.font-100 { font-weight: 100 }
+.font-200 { font-weight: 200 }
+.font-300 { font-weight: 300 }
+.font-400 { font-weight: 400 }
+.font-500 { font-weight: 500 }
+.font-600 { font-weight: 600 }
+.font-700 { font-weight: 700 }
+.font-800 { font-weight: 800 }
+.font-900 { font-weight: 900 }
+.break-word { word-wrap: break-word }
+.list-none { list-style-type: none }
+.prose { max-width: 20em; margin-left: auto; margin-right: auto }
+.headline {
+  padding: 1rem;
+  margin: auto;
+  margin-bottom: 1px;
+  font-weight: bold;
+}
+.sample {
+  display: block;
+  width: 100%;
+  max-width: 50em;
+  margin: auto;
+}
+/* via https://npm.im/border.css */
+.border-none { border-style: none }
+.border-inset { border-style: inset }
+.border-groove { border-style: groove }
+.border-outset { border-style: outset }
+.border-ridge { border-style: ridge }
+.border-dotted { border-style: dotted }
+.border-dashed { border-style: dashed }
+.border-solid { border-style: solid }
+.border-double { border-style: double }
+.border-hidden { border-style: hidden }
+.border-trim { border-width: 0 }
+.border-thin { border-width: thin }
+.border-medium { border-width: medium }
+.border-thick { border-width: thick }
+/* via https://npm.im/flow.css */
+.inline-flow { display: inline }
+.inline-root { display: inline-block }
+.inline-table { display: inline-table }
+.inline-flex { display: inline-flex }
+.block-flow { display: block }
+.block-root { display: block; display: flow-root }
+.block-table { display: table }
+.block-flex { display: flex }
+/* respect [hidden] regardless of above */
+[hidden]:not(:target) { display: none }
+.m0 { margin: 0 }
+.m1 { margin: .5rem }
+.m2 { margin: 1rem }
+.m3 { margin: 2rem }
+.m4 { margin: 4rem }
+.m-auto { margin: auto }
+.mb0 { margin-bottom: 0 }
+.mb1 { margin-bottom: .5rem }
+.mb2 { margin-bottom: 1rem }
+.mb3 { margin-bottom: 2rem }
+.mb4 { margin-bottom: 4rem }
+.mb-auto { margin-bottom: auto }
+.mb0-first:first-child { margin-bottom: 0 }
+.mb0-last:last-child { margin-bottom: 0 }
+.p0 { padding: 0 }
+.p1 { padding: .5rem }
+.p2 { padding: 1rem }
+.p3 { padding: 2rem }
+.p4 { padding: 4rem }
+</style>
+
+<body class="preset-box p1">
+
+<header class="block-table mb4">
+  <h1 class="preset-box mb1">preset.css</h1>
+  <a class="preset-button preset-color p1 paint-show block-table mb1 mb0-last" href="https://github.com/ryanve/preset.css">Github</a>
+  <a class="preset-button preset-color p1 paint-show block-table mb1 mb0-last" href="https://www.npmjs.com/package/preset.css">npm</a>
+</header>
+
+<figure id="preset-button" class="sample preset-box block-table mb4">
+  <figcaption class="paint-call headline"><code>.preset-button</code></figcaption>
+  <figure class="preset-box paint-show p2">
+    <figure class="preset-box mb2">
+      <button class="preset-button preset-color">&lt;button&gt;</button>
+    </figure>
+    <figure class="preset-box mb2">
+      <a class="preset-button preset-color" href="#preset-button">:link</a>
+    </figure>
+    <figure class="preset-box">
+      <input class="preset-button preset-color" type="button" value="[type=button]">
+      <input class="preset-button preset-color" type="reset" value="[type=reset]">
+      <input class="preset-button preset-color" type="submit" value="[type=submit]">
+    </figure>
+  </figure>
+</figure>
+
+<figure id="preset-input" class="sample preset-box block-table mb4">
+  <figcaption class="paint-call headline"><code>.preset-input</code></figcaption>
+  <figure class="preset-box paint-show p2">
+    <figure class="preset-box">
+      <input class="preset-input" value="input">
+    </figure>
+  </figure>
+</figure>
+
+<figure id="preset-textarea" class="sample preset-box block-table mb4">
+  <figcaption class="paint-call headline"><code>.preset-textarea</code></figcaption>
+  <figure class="preset-box paint-show p2">
+    <figure class="preset-box">
+      <textarea class="preset-textarea">textarea</textarea>
+    </figure>
+  </figure>
+</figure>
+
+<script>
+if ("ryanve.github.io" === location.hostname) {
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-5731919-29', 'auto');
+  ga('send', 'pageview');
+}
+</script>

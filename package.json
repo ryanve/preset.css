@@ -1,10 +1,16 @@
 {
   "name": "preset.css",
-  "description": "CSS reset for interactive elements",
+  "description": "CSS preset classes",
   "version": "0.1.0",
   "license": "MIT",
   "author": "Ryan Van Etten",
   "homepage": "https://github.com/ryanve/preset.css",
+  "scripts": {
+    "css": "npm run css:scss && npm run css:postcss",
+    "css:postcss": "postcss preset.css --use postcss-discard-duplicates postcss-sort-alphabetically --no-map --output preset.css",
+    "css:scss": "node-sass preset.scss preset.css --output-style expanded",
+    "start": "npm run css"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/ryanve/preset.css.git"
@@ -17,5 +23,11 @@
     "scss",
     "less",
     "reset"
-  ]
+  ],
+  "devDependencies": {
+    "node-sass": "^4.7.2",
+    "postcss-cli": "^4.1.1",
+    "postcss-discard-duplicates": "^2.1.0",
+    "postcss-sort-alphabetically": "^1.1.1"
+  }
 }

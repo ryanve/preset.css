@@ -1,0 +1,25 @@
+@import "mixin";
+
+.preset-color {
+  @include preset-color;
+}
+
+.preset-box {
+  @include preset-box;
+}
+
+.preset-input {
+  @include preset-input;
+}
+
+.preset-textarea {
+  @include preset-textarea;
+}
+
+.preset-label {
+  @include preset-label;
+}
+
+.preset-button {
+  @include preset-button;
+}

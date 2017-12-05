@@ -1,0 +1,56 @@
+@mixin preset-color {
+  background: transparent;
+  border-color: currentColor;
+  color: inherit;
+}
+
+@mixin preset-box {
+  border-radius: 0;
+  border-width: 0;
+  box-sizing: border-box;
+  margin: 0;
+  max-height: 100%;
+  max-width: 100%;
+  padding: 0;
+}
+
+@mixin preset-input {
+  @include preset-box;
+  border-style: inset;
+  display: inline-block;
+  font: inherit;
+  overflow: visible;
+  text-transform: none;
+}
+
+@mixin preset-textarea {
+  @include preset-box;
+  border-style: inset;
+  display: inline-block;
+  font: inherit;
+  overflow: auto;
+  text-transform: none;
+}
+
+@mixin preset-button {
+  @include preset-box;
+  // @include preset-color;
+  // border-style: solid;
+  display: inline-block;
+  font: inherit;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  touch-action: manipulation;
+  -webkit-appearance: none;
+
+  //github.com/necolas/normalize.css/blob/7.0.0/normalize.css
+  &::-moz-focus-inner { border-style: none; padding: 0; }
+  &:-moz-focusring { outline: 1px dotted ButtonText; }
+}
+
+@mixin preset-label {
+  @include preset-box;
+  display: table;
+  touch-action: manipulation;
+}

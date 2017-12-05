@@ -1,19 +1,82 @@
-[hidden] {
-  display: none;
+.preset-color {
+  background: transparent;
+  border-color: currentColor;
+  color: inherit;
 }
 
-a,
-button,
-input,
-label,
-select,
-summary,
-textarea {
+.preset-box {
+  border-radius: 0;
+  border-width: 0;
+  box-sizing: border-box;
+  margin: 0;
+  max-height: 100%;
+  max-width: 100%;
+  padding: 0;
+}
+
+.preset-input {
+  border-radius: 0;
+  border-style: inset;
+  border-width: 0;
+  box-sizing: border-box;
+  display: inline-block;
+  font: inherit;
+  margin: 0;
+  max-height: 100%;
+  max-width: 100%;
+  overflow: visible;
+  padding: 0;
+  text-transform: none;
+}
+
+.preset-textarea {
+  border-radius: 0;
+  border-style: inset;
+  border-width: 0;
+  box-sizing: border-box;
+  display: inline-block;
+  font: inherit;
+  margin: 0;
+  max-height: 100%;
+  max-width: 100%;
+  overflow: auto;
+  padding: 0;
+  text-transform: none;
+}
+
+.preset-label {
+  border-radius: 0;
+  border-width: 0;
+  box-sizing: border-box;
+  display: table;
+  margin: 0;
+  max-height: 100%;
+  max-width: 100%;
+  padding: 0;
   touch-action: manipulation;
 }
 
-:disabled,
-:disabled * {
-  cursor: default;
-  pointer-events: none;
+.preset-button {
+  -webkit-appearance: none;
+  border-radius: 0;
+  border-width: 0;
+  box-sizing: border-box;
+  display: inline-block;
+  font: inherit;
+  margin: 0;
+  max-height: 100%;
+  max-width: 100%;
+  overflow: visible;
+  padding: 0;
+  text-transform: none;
+  touch-action: manipulation;
+}
+
+.preset-button::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.preset-button:-moz-focusring {
+  outline: 1px dotted ButtonText;
 }
